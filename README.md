@@ -1,5 +1,7 @@
 # 01-HTML
 Link to Netlify: https://anastasiya-chernyavskaya.netlify.app/
+## PS 
+В разметке есть один класс "visually-hidden", мне показалось логичным пометить так элементы, нужные для семантики (по моему мнению), но отсутствующие в макете.
 ## Макет
 https://www.figma.com/file/LPx4g3g72aeXdvgj2uFdjd/SpurIT---
 HTML%2FCSS%2FJS%2FA11Y?node-id=0%3A1
