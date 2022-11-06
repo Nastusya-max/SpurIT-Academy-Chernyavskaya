@@ -1,198 +1,358 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task №01 -- HTML</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Task №02 - CSS" />
+    <title>Susparsa</title>
+    <link
+      href="./assets/fonts/AvenirNextRoundedStd-Reg.woff"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
+
   <body>
-    <header>
-      <nav>
-        <a href="/"><img src="./assets/img/logo.svg" alt="Susparsa logo"></a>
-        <ul>
-          <li><a href="">Women</a></li>
-          <li><a href="">Men</a></li>
-          <li><a href="">Kids</a></li>
-          <li><a href="">Company</a></li>
-          <li><a href="">Account</a></li>
-          <li><a href="">Search</a></li>
-          <li><a href="">Cart (0)</a></li>
+    <header class="header">
+      <!-- <a class="skip-to skip-to--content" href="#main">Skip to content</a>
+      <a class="skip-to skip-to--footer" href="#footer">Skip to footer</a> -->
+      <nav class="header-navigation" role="navigation">
+        <ul class="header-navigation__list" role="list">
+          <li class="header-navigation__item">
+            <a
+              href="/"
+              class="header-navigation__link header-navigation__logo logo"
+              ><span class="visually-hidden">Homepage</span>
+              <img
+                class="logo__image"
+                src="./assets/img/logo.svg"
+                alt=""
+                aria-hidden="true"
+            /></a>
+          </li>
+
+          <li class="header-navigation__item">
+            <a href="/men" class="header-navigation__link">Women</a>
+          </li>
+          <li class="header-navigation__item">
+            <a href="/kids" class="header-navigation__link">Men</a>
+          </li>
+          <li class="header-navigation__item">
+            <a href="/women" class="header-navigation__link">Kids</a>
+          </li>
+          <li class="header-navigation__item">
+            <a href="/company" class="header-navigation__link last">Company</a>
+          </li>
+          <li class="header-navigation__item">
+            <a href="/account" class="header-navigation__link">Account</a>
+          </li>
+          <li class="header-navigation__item">
+            <a href="/search" class="header-navigation__link">Search</a>
+          </li>
+          <li class="header-navigation__item">
+            <a href="/cart" class="header-navigation__link last">Cart (0)</a>
+          </li>
         </ul>
       </nav>
+
+      <nav class="breadcrumbs">
+        <ol class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__page" href="/">Home</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__page" href="">Women</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <span class="breadcrumbs__page breadcrumbs__page--current"
+              >White unisex t-shirt</span
+            >
+          </li>
+        </ol>
+      </nav>
     </header>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="">Women</a></li>
-        <li>White unisex t-shirt</li>
-      </ul>
-    </nav>
-    <h1 class="visually-hidden">Susparsa company. Casual wear for everyone</h1>
-    <main>
-      <section>
-        <h2 class="visually-hidden">Product card</h2>
-        <article>
-          <img src="./assets/img/mainPic.png" alt="White unisex t-shirt">
-          <h3>White unisex t-shirt</h3>
-          <p><abbr title="Swiss franc">CHF</abbr> 40</p>
-          <p><small>Tax included</small></p>
-          <form action="/" method="post">
-            <p>Size</p>
-            <ul>
-              <li>
-                <input
-                  id="XS-size"
-                  type="radio"
-                  name="size-option"
-                  value="XS"
-               ><label for="XS-size"><abbr title="Extra Small">XS</abbr></label>
-              </li>
-              <li>
-                <input
-                  id="S-size"
-                  type="radio"
-                  name="size-option"
-                  value="S"
-                  checked
-               ><label for="S-size"><abbr title="Small">S</abbr></label>
-              </li>
-              <li>
-                <input
-                  id="M-size"
-                  type="radio"
-                  name="size-option"
-                  value="M"
-               ><label for="M-size"><abbr title="Medium">M</abbr></label>
-              </li>
-              <li>
-                <input
-                  id="L-size"
-                  type="radio"
-                  name="size-option"
-                  value="L"
-               ><label for="L-size"><abbr title="Large">L</abbr></label>
-              </li>
-              <li>
-                <input
-                  id="XL-size"
-                  type="radio"
-                  name="size-option"
-                  value="XL"
-               ><label for="XL-size"><abbr title="Extra Large">XL</abbr></label>
-              </li>
-              <li>
-                <input
-                  id="2XL-size"
-                  type="radio"
-                  name="size-option"
-                  value="2XL"
-                  disabled
-               ><label for="2XL-size"><abbr title="Double Extra Lage">2XL</abbr></label>
-              </li>
-            </ul>
-            <p>Color - <span>White</span></p>
-            <ul>
-              <li>
-                <input
-                  id="white-color"
-                  type="radio"
-                  name="color-option"
-                  value="White"
-                  checked
-               ><label for="white-color" style="background-color: white"
-                  ><span>White</span></label
-                >
-              </li>
-              <li>
-                <input
-                  id="black-color"
-                  type="radio"
-                  name="color-option"
-                  value="Black"
-               ><label for="black-color" style="background-color: black"
-                  ><span>Black</span></label
-                >
-              </li>
-              <li>
-                <input
-                  id="grey-color"
-                  type="radio"
-                  name="color-option"
-                  value="Grey"
-               ><label for="grey-color" style="background-color: #aeaeb0"
-                  ><span>Grey</span></label
-                >
-              </li>
-              <li>
-                <input
-                  id="purple-color"
-                  type="radio"
-                  name="color-option"
-                  value="Purple"
-               ><label for="purple-color" style="background-color: #ba9be5"
-                  ><span>Purple latte</span></label
-                >
-              </li>
-              <li>
-                <input
-                  id="pink-color"
-                  type="radio"
-                  name="color-option"
-                  value="Pink"
-                  disabled
-               ><label for="pink-color" style="background-color: #e9a0a7"
-                  ><span>Pink</span></label
-                >
-              </li>
-              <li>
-                <input
-                  id="barely-pink-color"
-                  type="radio"
-                  name="color-option"
-                  value="Barely pink"
-                  disabled
-               ><label
-                  for="barely-pink-color"
-                  style="background-color: #f8cab1"
-                  ><span>Barely pink</span></label
-                >
-              </li>
-            </ul>
-            <div>
-              <input type="button" id="buttonCountPlus" value="+">
-              <div id="buttonCountNumber">1</div>
-              <input type="button" id="buttonCountMinus" value="-">
+
+    <main id="main" class="container">
+      <section class="product">
+        <article class="main-product-card product-card">
+          <div class="product-card__info">
+            <h1 class="product-card__heading heading heading--xxl">
+              White unisex t-shirt
+            </h1>
+
+            <div class="product-card__price">
+              <span class="visually-hidden">Product price</span>
+              <p>
+                <abbr title="Swiss franc">CHF</abbr>
+                <span class="price">40</span>
+              </p>
+              <p><small>Tax included</small></p>
             </div>
-            <button type="submit">
-              <span class="visually-hidden">Add product to shopping cart</span>
-              Add to cart
-            </button>
-            <button type="submit">
-              <span class="visually-hidden">Buy product right now</span>
-              Buy it now
-            </button>
-          </form>
-          <p>
-            A unisex basic garment with a loose fit. Light and comfortable to
-            your skin.<br>
-            <dfn>Certification of cotton</dfn> - <i><abbr title="Global Organic Textile Standard">GOTS</abbr></i>
-          </p>
-          <button type="button">Sizing & Fit</button>
-          <span>Olga is <i>175cm</i>, she is wearing a size <i>S</i>.</span>
-          <button type="button">Composition & Care</button>
-          <button type="button">Delivery & Returns</button>
+
+            <form action="/cart" method="post">
+              <fieldset class="product-card__fieldset">
+                <legend>Size</legend>
+                <div class="radio-group">
+                  <div class="radio">
+                    <input
+                      id="XS-size"
+                      class="radio__input"
+                      type="radio"
+                      name="size-option"
+                      value="XS"
+                    /><label class="radio__label" for="XS-size"
+                      ><abbr title="Extra Small">XS</abbr></label
+                    >
+                  </div>
+
+                  <div class="radio">
+                    <input
+                      id="S-size"
+                      class="radio__input"
+                      type="radio"
+                      name="size-option"
+                      value="S"
+                      checked
+                    /><label class="radio__label" for="S-size"
+                      ><abbr title="Small">S</abbr></label
+                    >
+                  </div>
+
+                  <div class="radio">
+                    <input
+                      id="M-size"
+                      class="radio__input"
+                      type="radio"
+                      name="size-option"
+                      value="M"
+                    /><label class="radio__label" for="M-size"
+                      ><abbr title="Medium">M</abbr></label
+                    >
+                  </div>
+
+                  <div class="radio">
+                    <input
+                      id="L-size"
+                      class="radio__input"
+                      type="radio"
+                      name="size-option"
+                      value="L"
+                    /><label class="radio__label" for="L-size"
+                      ><abbr title="Large">L</abbr></label
+                    >
+                  </div>
+
+                  <div class="radio">
+                    <input
+                      id="XL-size"
+                      class="radio__input"
+                      type="radio"
+                      name="size-option"
+                      value="XL"
+                    /><label class="radio__label" for="XL-size"
+                      ><abbr title="Extra Large">XL</abbr></label
+                    >
+                  </div>
+
+                  <div class="radio">
+                    <input
+                      id="2XL-size"
+                      class="radio__input"
+                      type="radio"
+                      name="size-option"
+                      value="2XL"
+                      disabled
+                    /><label class="radio__label" for="2XL-size"
+                      ><abbr title="Double Extra Lage">2XL</abbr></label
+                    >
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset class="product-card__fieldset">
+                <legend>Color - <span aria-hidden="true">White</span></legend>
+                <div class="radio-group">
+                  <div class="radio radio--color">
+                    <input
+                      id="white-color"
+                      class="radio__input"
+                      type="radio"
+                      name="color-option"
+                      value="White"
+                      checked
+                    /><label
+                      class="radio__label"
+                      for="white-color"
+                      style="background-color: white"
+                      ><span class="visually-hidden">White</span></label
+                    >
+                  </div>
+
+                  <div class="radio radio--color">
+                    <input
+                      id="black-color"
+                      class="radio__input"
+                      type="radio"
+                      name="color-option"
+                      value="Black"
+                    /><label
+                      class="radio__label"
+                      for="black-color"
+                      style="background-color: black"
+                      ><span class="visually-hidden">Black</span></label
+                    >
+                  </div>
+
+                  <div class="radio radio--color">
+                    <input
+                      id="grey-color"
+                      class="radio__input"
+                      type="radio"
+                      name="color-option"
+                      value="Grey"
+                    /><label
+                      class="radio__label"
+                      for="grey-color"
+                      style="background-color: #aeaeb0"
+                      ><span class="visually-hidden">Grey</span></label
+                    >
+                  </div>
+
+                  <div class="radio radio--color">
+                    <input
+                      id="purple-color"
+                      class="radio__input"
+                      type="radio"
+                      name="color-option"
+                      value="Purple"
+                    /><label
+                      class="radio__label"
+                      for="purple-color"
+                      style="background-color: #ba9be5"
+                      ><span class="visually-hidden">Purple latte</span></label
+                    >
+                  </div>
+
+                  <div class="radio radio--color">
+                    <input
+                      id="pink-color"
+                      class="radio__input"
+                      type="radio"
+                      name="color-option"
+                      value="Pink"
+                      disabled
+                    /><label
+                      class="radio__label"
+                      for="pink-color"
+                      style="background-color: #e9a0a7"
+                      ><span class="visually-hidden">Pink</span></label
+                    >
+                  </div>
+
+                  <div class="radio radio--color">
+                    <input
+                      id="barely-pink-color"
+                      class="radio__input"
+                      type="radio"
+                      name="color-option"
+                      value="Barely pink"
+                      disabled
+                    /><label
+                      class="radio__label"
+                      for="barely-pink-color"
+                      style="background-color: #f8cab1"
+                      ><span class="visually-hidden">Barely pink</span></label
+                    >
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset class="product-card__fieldset">
+                <legend class="quantity__legend">
+                  <label for="quantity">Quantity</label>
+                </legend>
+                <div class="quantity__controls">
+                  <input
+                    id="quantity"
+                    class="quantity__input"
+                    type="number"
+                    min="1"
+                    max="5"
+                    value="1"
+                    name="quantity"
+                    inputmode="none"
+                  />
+                  <button
+                    class="quantity__button quantity__button--decrease"
+                    type="button"
+                  >
+                    <span class="visually-hidden">Decrease quantity</span>
+                  </button>
+                  <button
+                    class="quantity__button quantity__button--increase"
+                    type="button"
+                  >
+                    <span class="visually-hidden">Increase quantity</span>
+                  </button>
+                </div>
+              </fieldset>
+
+              <button
+                class="button button--primary"
+                type="submit"
+                name="type"
+                value="add"
+              >
+                <span class="visually-hidden"
+                  >Add product to shopping cart</span
+                >
+                Add to cart
+              </button>
+              <button
+                class="button button--secondary"
+                type="submit"
+                name="type"
+                value="buy"
+              >
+                <span class="visually-hidden">Buy product right now</span>
+                Buy it now
+              </button>
+            </form>
+
+            <p>
+              A unisex basic garment with a loose fit. Light and comfortable to
+              your skin.<br />
+              Certification of cotton -
+              <i><abbr title="Global Organic Textile Standard">GOTS</abbr></i>
+            </p>
+          </div>
+
+          <div>
+            <h3><button type="button">Sizing & Fit</button></h3>
+            <p>Olga is <i>175cm</i>, she is wearing a size <i>S</i>.</p>
+            <h3><button type="button">Composition & Care</button></h3>
+            <h3><button type="button">Delivery & Returns</button></h3>
+          </div>
+
+          <img src="./assets/img/mainPic.png" alt="White unisex t-shirt" class="main-roduct-card__image product-card__image"/>
         </article>
       </section>
+
       <section>
-        <header>
-          <h2>You may also like</h2>
-        </header>
-        <ul>
+        <!-- aside -->
+        <h2 class="heading heading--xxl">You may also like</h2>
+        <ul class="products__list">
           <li>
-            <article>
-              <img src="./assets/img/DSC_2518.png" alt="Product name">
-              <a href=""><h3>Product name</h3></a>
+            <article class="product-card">
+              <img
+                src="./assets/img/DSC_2518.png"
+                alt="Product name"
+                class="recomendation-product__image product-card__image"
+              />
+              <a href="" class="product-card__link"
+                ><h3 class="heading">Product name</h3></a
+              >
               <ul>
                 <li>
                   <input
@@ -200,7 +360,7 @@
                     type="radio"
                     name="recommendation-product-color-1"
                     value="Terracotta"
-                 ><label
+                  /><label
                     for="terracotta-color-1"
                     style="background-color: #c88252"
                     ><span>Terracotta</span></label
@@ -212,7 +372,7 @@
                     type="radio"
                     name="recommendation-product-color-1"
                     value="Purple"
-                 ><label
+                  /><label
                     for="purple-color-1"
                     style="background-color: #ba9be5"
                     ><span>Purple latte</span></label
@@ -224,7 +384,7 @@
                     type="radio"
                     name="recommendation-product-color-1"
                     value="Pink"
-                 ><label for="pink-color-1" style="background-color: #e9a0a7"
+                  /><label for="pink-color-1" style="background-color: #e9a0a7"
                     ><span>Pink</span></label
                   >
                 </li>
@@ -234,7 +394,7 @@
                     type="radio"
                     name="recommendation-product-color-1"
                     value="Barely pink"
-                 ><label
+                  /><label
                     for="barely-pink-color-1"
                     style="background-color: #f8cab1"
                     ><span>Barely pink</span></label
@@ -245,9 +405,15 @@
             </article>
           </li>
           <li>
-            <article>
-              <img src="./assets/img/DSC_5389_1.png" alt="Product name">
-              <a href=""><h3>Product name</h3></a>
+            <article class="product-card">
+              <img
+                src="./assets/img/DSC_5389_1.png"
+                alt="Product name"
+                class="recomendation-product__image product-card__image"
+              />
+              <a href="" class="product-card__link"
+                ><h3 class="heading">Product name</h3></a
+              >
               <ul>
                 <li>
                   <input
@@ -255,7 +421,7 @@
                     type="radio"
                     name="recommendation-product-color-2"
                     value="Terracotta"
-                 ><label
+                  /><label
                     for="terracotta-color-2"
                     style="background-color: #c88252"
                     ><span>Terracotta</span></label
@@ -267,7 +433,7 @@
                     type="radio"
                     name="recommendation-product-color-2"
                     value="Purple"
-                 ><label
+                  /><label
                     for="purple-color-2"
                     style="background-color: #ba9be5"
                     ><span>Purple latte</span></label
@@ -279,7 +445,7 @@
                     type="radio"
                     name="recommendation-product-color-2"
                     value="Pink"
-                 ><label for="pink-color-2" style="background-color: #e9a0a7"
+                  /><label for="pink-color-2" style="background-color: #e9a0a7"
                     ><span>Pink</span></label
                   >
                 </li>
@@ -289,7 +455,7 @@
                     type="radio"
                     name="recommendation-product-color-2"
                     value="Barely pink"
-                 ><label
+                  /><label
                     for="barely-pink-color-2"
                     style="background-color: #f8cab1"
                     ><span>Barely pink</span></label
@@ -300,9 +466,15 @@
             </article>
           </li>
           <li>
-            <article>
-              <img src="./assets/img/DSC_2330.png" alt="Product name">
-              <a href=""><h3>Product name</h3></a>
+            <article class="product-card">
+              <img
+                src="./assets/img/DSC_2330.png"
+                alt="Product name"
+                class="recomendation-product__image product-card__image"
+              />
+              <a href="" class="product-card__link"
+                ><h3 class="heading">Product name</h3></a
+              >
               <ul>
                 <li>Sold out</li>
               </ul>
@@ -313,7 +485,7 @@
                     type="radio"
                     name="recommendation-product-color-3"
                     value="Terracotta"
-                 ><label
+                  /><label
                     for="terracotta-color-3"
                     style="background-color: #c88252"
                     ><span>Terracotta</span></label
@@ -325,7 +497,7 @@
                     type="radio"
                     name="recommendation-product-color-3"
                     value="Purple"
-                 ><label
+                  /><label
                     for="purple-color-3"
                     style="background-color: #ba9be5"
                     ><span>Purple latte</span></label
@@ -337,7 +509,7 @@
                     type="radio"
                     name="recommendation-product-color-3"
                     value="Pink"
-                 ><label for="pink-color-3" style="background-color: #e9a0a7"
+                  /><label for="pink-color-3" style="background-color: #e9a0a7"
                     ><span>Pink</span></label
                   >
                 </li>
@@ -347,7 +519,7 @@
                     type="radio"
                     name="recommendation-product-color-3"
                     value="Barely pink"
-                 ><label
+                  /><label
                     for="barely-pink-color-3"
                     style="background-color: #f8cab1"
                     ><span>Barely pink</span></label
@@ -358,9 +530,15 @@
             </article>
           </li>
           <li>
-            <article>
-              <img src="./assets/img/DSC_1111.png" alt="Product name">
-              <a href=""><h3>Product name</h3></a>
+            <article class="product-card">
+              <img
+                src="./assets/img/DSC_1111.png"
+                alt="Product name"
+                class="recomendation-product__image product-card__image"
+              />
+              <a href="" class="product-card__link"
+                ><h3 class="heading">Product name</h3></a
+              >
               <ul>
                 <li>
                   <input
@@ -368,7 +546,7 @@
                     type="radio"
                     name="recommendation-product-color-4"
                     value="Terracotta"
-                 ><label
+                  /><label
                     for="terracotta-color-4"
                     style="background-color: #c88252"
                     ><span>Terracotta</span></label
@@ -380,7 +558,7 @@
                     type="radio"
                     name="recommendation-product-color-4"
                     value="Purple"
-                 ><label
+                  /><label
                     for="purple-color-4"
                     style="background-color: #ba9be5"
                     ><span>Purple latte</span></label
@@ -392,7 +570,7 @@
                     type="radio"
                     name="recommendation-product-color-4"
                     value="Pink"
-                 ><label for="pink-color-4" style="background-color: #e9a0a7"
+                  /><label for="pink-color-4" style="background-color: #e9a0a7"
                     ><span>Pink</span></label
                   >
                 </li>
@@ -402,7 +580,7 @@
                     type="radio"
                     name="recommendation-product-color-4"
                     value="Barely pink"
-                 ><label
+                  /><label
                     for="barely-pink-color-4"
                     style="background-color: #f8cab1"
                     ><span>Barely pink</span></label
@@ -415,54 +593,114 @@
         </ul>
       </section>
     </main>
-    <footer>
-      <h2>About</h2>
-      <p>Susparsa Store Geneva,<br>Switzerland</p>
-      <ul>
-        <li>
-          <a href=""><img src="./assets/img/Facebook.svg" alt=""></a>
-        </li>
-        <li>
-          <a href=""><img src="./assets/img/Instagram.svg" alt=""></a>
-        </li>
-      </ul>
-      <h2>Company</h2>
-      <ul>
-        <li>
-          <a href="">Women</a>
-        </li>
-        <li>
-          <a href="">Men</a>
-        </li>
-        <li>
-          <a href="">Kids</a>
-        </li>
-        <li>
-          <a href="">About Us</a>
-        </li>
-        <li>
-          <a href="">Our Materials</a>
-        </li>
-      </ul>
-      <h2>Useful Links</h2>
-      <ul>
-        <li>
-          <a href="">Privacy Policy</a>
-        </li>
-        <li>
-          <a href="">Shipping Policy</a>
-        </li>
-        <li>
-          <a href="">Return & Refund Policy</a>
-        </li>
-        <li>
-          <a href="">Terms of Service</a>
-        </li>
-        <li>
-          <a href="">Contact Us</a>
-        </li>
-      </ul>
-      <a href="/"><small>© Susparsa <time datetime="2021">2021</time></small></a>
+
+    <footer id="footer" class="footer__container">
+      <div class="container">
+        <div class="footer__top">
+          <section class="footer__section">
+            <h2 class="footer__heading heading heading--s">About</h2>
+            <address class="address">
+              <p class="address__location">
+                Susparsa Store<br />Geneva, Switzerland
+              </p>
+
+              <ul class="icon-list">
+                <li class="icon-list__item">
+                  <a href="" class="icon-list__link"
+                    ><svg
+                      class="social-icon icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="20"
+                      fill="none"
+                    >
+                      <path
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                        d="M9.027 9.982H6.429V19.5H2.492V9.982H.62V6.637h1.872V4.472C2.492 2.924 3.228.5 6.464.5L9.38.512V3.76H7.264c-.347 0-.835.174-.835.912V6.64h2.942l-.344 3.342Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="icon-list__item">
+                  <a href="" class="icon-list__link"
+                    ><svg
+                      class="social-icon icon"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.7071 0.5C17.3502 0.5 19.5 2.65013 19.5 5.29293V14.7071C19.5 17.3502 17.3502 19.5 14.7071 19.5H5.29293C2.65013 19.5 0.5 17.3502 0.5 14.7071V5.29293C0.5 2.65013 2.65013 0.5 5.29293 0.5H14.7071ZM14.7071 2.56779H5.29293C3.7903 2.56779 2.56779 3.7903 2.56779 5.29293V14.7071C2.56779 16.2097 3.7903 17.4326 5.29293 17.4326H14.7071C16.2097 17.4326 17.4326 16.21 17.4326 14.7071V5.29293C17.4326 3.7903 16.21 2.56779 14.7071 2.56779ZM10 5.10678C12.6984 5.10678 14.8936 7.30195 14.8936 10C14.8936 12.698 12.698 14.8936 10 14.8936C7.30195 14.8936 5.10678 12.6984 5.10678 10C5.10678 7.30195 7.30195 5.10678 10 5.10678ZM10 7.17456C8.44247 7.17456 7.17421 8.44212 7.17421 9.99965C7.17421 11.5579 8.44247 12.8258 10 12.8258C11.5582 12.8258 12.8254 11.5579 12.8254 9.99965C12.8254 8.44247 11.5579 7.17456 10 7.17456ZM15.0509 3.80297C15.6892 3.80297 16.2086 4.32238 16.2086 4.96073C16.2086 5.59909 15.6892 6.1185 15.0509 6.1185C14.4122 6.1185 13.8928 5.59909 13.8928 4.96073C13.8928 4.32238 14.4122 3.80297 15.0509 3.80297Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </address>
+          </section>
+
+          <section class="footer__section">
+            <h2 class="footer__heading heading heading--s">Company</h2>
+            <ul class="footer-navigation">
+              <li class="footer-navigation__item">
+                <a href="" class="footer-navigation__link">Women</a>
+              </li>
+              <li class="footer-navigation__item">
+                <a href="" class="footer-navigation__link">Men</a>
+              </li>
+              <li class="footer-navigation__item">
+                <a href="" class="footer-navigation__link">Kids</a>
+              </li>
+              <li class="footer-navigation__item">
+                <a href="" class="footer-navigation__link">About Us</a>
+              </li>
+              <li class="footer-navigation__item">
+                <a href="" class="footer-navigation__link">Our Materials</a>
+              </li>
+            </ul>
+          </section>
+
+          <section class="footer__section">
+            <h2 class="footer__heading heading heading--s">Useful Links</h2>
+            <ul class="footer-navigation">
+              <li class="footer-navigation__item">
+                <a href="" class="footer-navigation__link">Privacy Policy</a>
+              </li>
+              <li class="footer-navigation__item">
+                <a href="" class="footer-navigation__link">Shipping Policy</a>
+              </li>
+              <li class="footer-navigation__item">
+                <a href="" class="footer-navigation__link"
+                  >Return & Refund Policy</a
+                >
+              </li>
+              <li class="footer-navigation__item">
+                <a href="" class="footer-navigation__link">Terms of Service</a>
+              </li>
+              <li class="footer-navigation__item">
+                <a href="" class="footer-navigation__link">Contact Us</a>
+              </li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="footer__bottom">
+          <section class="footer__section">
+            <h2 class="visually-hidden">Copyright</h2>
+            <p>
+              <small class="copyright-text"
+                >© Susparsa <time datetime="2021">2021</time></small
+              >
+            </p>
+          </section>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
