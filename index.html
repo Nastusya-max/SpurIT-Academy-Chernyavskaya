@@ -90,7 +90,7 @@
               <p><small>Tax included</small></p>
             </div>
 
-            <form action="/cart" method="post">
+            <form action="/cart" method="post" class="product-card__form">
               <fieldset class="product-card__fieldset">
                 <legend>Size</legend>
                 <div class="radio-group">
@@ -155,7 +155,7 @@
                     >
                   </div>
 
-                  <div class="radio">
+                  <div class="radio disabled">
                     <input
                       id="2XL-size"
                       class="radio__input"
@@ -234,7 +234,7 @@
                     >
                   </div>
 
-                  <div class="radio radio--color">
+                  <div class="radio radio--color disabled">
                     <input
                       id="pink-color"
                       class="radio__input"
@@ -250,7 +250,7 @@
                     >
                   </div>
 
-                  <div class="radio radio--color">
+                  <div class="radio radio--color disabled">
                     <input
                       id="barely-pink-color"
                       class="radio__input"
@@ -272,7 +272,7 @@
                 <legend class="quantity__legend">
                   <label for="quantity">Quantity</label>
                 </legend>
-                <div class="quantity__controls">
+                <div class="quantity">
                   <input
                     id="quantity"
                     class="quantity__input"
@@ -320,7 +320,7 @@
               </button>
             </form>
 
-            <p>
+            <p class="product-card__text">
               A unisex basic garment with a loose fit. Light and comfortable to
               your skin.<br />
               Certification of cotton -
@@ -335,23 +335,31 @@
             <h3><button type="button">Delivery & Returns</button></h3>
           </div>
 
-          <img src="./assets/img/mainPic.png" alt="White unisex t-shirt" class="main-roduct-card__image product-card__image"/>
+          <img
+            src="./assets/img/mainPic.png"
+            alt="White unisex t-shirt"
+            class="main-roduct-card__image product-card__image"
+          />
         </article>
       </section>
 
       <section>
         <!-- aside -->
-        <h2 class="heading heading--xxl">You may also like</h2>
+        <h2 class="recommendation-heading heading--xxl heading">
+          You may also like
+        </h2>
         <ul class="products__list">
           <li>
             <article class="product-card">
               <img
                 src="./assets/img/DSC_2518.png"
                 alt="Product name"
-                class="recomendation-product__image product-card__image"
+                class="recommendation-product__image product-card__image"
               />
               <a href="" class="product-card__link"
-                ><h3 class="heading">Product name</h3></a
+                ><h3 class="recommendation-product-heading heading">
+                  Product name
+                </h3></a
               >
               <ul>
                 <li>
@@ -409,10 +417,12 @@
               <img
                 src="./assets/img/DSC_5389_1.png"
                 alt="Product name"
-                class="recomendation-product__image product-card__image"
+                class="recommendation-product__image product-card__image"
               />
               <a href="" class="product-card__link"
-                ><h3 class="heading">Product name</h3></a
+                ><h3 class="recommendation-product-heading heading">
+                  Product name
+                </h3></a
               >
               <ul>
                 <li>
@@ -470,10 +480,12 @@
               <img
                 src="./assets/img/DSC_2330.png"
                 alt="Product name"
-                class="recomendation-product__image product-card__image"
+                class="recommendation-product__image product-card__image"
               />
               <a href="" class="product-card__link"
-                ><h3 class="heading">Product name</h3></a
+                ><h3 class="recommendation-product-heading heading">
+                  Product name
+                </h3></a
               >
               <ul>
                 <li>Sold out</li>
@@ -534,10 +546,12 @@
               <img
                 src="./assets/img/DSC_1111.png"
                 alt="Product name"
-                class="recomendation-product__image product-card__image"
+                class="recommendation-product__image product-card__image"
               />
               <a href="" class="product-card__link"
-                ><h3 class="heading">Product name</h3></a
+                ><h3 class="recommendation-product-heading heading">
+                  Product name
+                </h3></a
               >
               <ul>
                 <li>
