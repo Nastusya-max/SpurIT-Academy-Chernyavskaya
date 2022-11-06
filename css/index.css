@@ -210,12 +210,11 @@ body {
   display: inline-block;
 }
 
-.breadcrumbs__item::before {
-  content: "";
-  border: 1px solid black;
-  height: 10px;
-  transform: rotate(4deg);
+.breadcrumbs__item:after {
+  content: "/";
+  speak: none;
 }
+
 /* #endregion */
 
 /* #region Products */
