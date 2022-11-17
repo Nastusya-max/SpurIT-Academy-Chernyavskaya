@@ -1,8 +1,5 @@
 # Задание по CSS
 Link to Netlify: https://anastasiya-chernyavskaya.netlify.app/
-## PS
-В коммите 5-го числа, обернула рекомендованные товары в ссылки, до конца дедлайна почему-то не заметила эту ошибку.
-В разметке есть один класс "visually-hidden", мне показалось логичным пометить так элементы, нужные для семантики (по моему мнению), но отсутствующие в макете.
 ## Макет
 https://www.figma.com/file/LPx4g3g72aeXdvgj2uFdjd/SpurIT---HTML%2FCSS%2FJS%2FA11Y?node-id=17%3A126
 ## Что сделать
