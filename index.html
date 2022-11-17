@@ -328,11 +328,23 @@
             </p>
           </div>
 
-          <div>
-            <h3><button type="button">Sizing & Fit</button></h3>
-            <p>Olga is <i>175cm</i>, she is wearing a size <i>S</i>.</p>
-            <h3><button type="button">Composition & Care</button></h3>
-            <h3><button type="button">Delivery & Returns</button></h3>
+          <div class="collapsible-tabe">
+            <div class="collapsible-item">
+              <button class="collapsible-button" type="button">
+                Sizing & Fit<span class="Collapsible__Plus"></span>
+              </button>
+            </div>
+            <!-- <p>Olga is <i>175cm</i>, she is wearing a size <i>S</i>.</p> -->
+            <div class="collapsible-item">
+              <button class="collapsible-button" type="button">
+                Composition & Care
+              </button>
+            </div>
+            <div class="collapsible-item">
+              <button class="collapsible-button" type="button">
+                Delivery & Returns
+              </button>
+            </div>
           </div>
 
           <img
@@ -343,265 +355,347 @@
         </article>
       </section>
 
-      <section>
+      <section class="product-recommendations">
         <!-- aside -->
         <h2 class="recommendation-heading heading--xxl heading">
           You may also like
         </h2>
         <ul class="products__list">
           <li>
-            <article class="product-card">
+            <article class="product-card recommendation-product-card">
               <img
                 src="./assets/img/DSC_2518.png"
                 alt="Product name"
                 class="recommendation-product__image product-card__image"
               />
-              <a href="" class="product-card__link"
-                ><h3 class="recommendation-product-heading heading">
-                  Product name
-                </h3></a
-              >
-              <ul>
-                <li>
-                  <input
-                    id="terracotta-color-1"
-                    type="radio"
-                    name="recommendation-product-color-1"
-                    value="Terracotta"
-                  /><label
-                    for="terracotta-color-1"
-                    style="background-color: #c88252"
-                    ><span>Terracotta</span></label
-                  >
-                </li>
-                <li>
-                  <input
-                    id="purple-color-1"
-                    type="radio"
-                    name="recommendation-product-color-1"
-                    value="Purple"
-                  /><label
-                    for="purple-color-1"
-                    style="background-color: #ba9be5"
-                    ><span>Purple latte</span></label
-                  >
-                </li>
-                <li>
-                  <input
-                    id="pink-color-1"
-                    type="radio"
-                    name="recommendation-product-color-1"
-                    value="Pink"
-                  /><label for="pink-color-1" style="background-color: #e9a0a7"
-                    ><span>Pink</span></label
-                  >
-                </li>
-                <li>
-                  <input
-                    id="barely-pink-color-1"
-                    type="radio"
-                    name="recommendation-product-color-1"
-                    value="Barely pink"
-                  /><label
-                    for="barely-pink-color-1"
-                    style="background-color: #f8cab1"
-                    ><span>Barely pink</span></label
-                  >
-                </li>
-              </ul>
-              <p><abbr title="Swiss franc">CHF</abbr> 40</p>
+              <div class="product-item__info">
+                <a href="" class="product-card__link"
+                  ><h3 class="recommendation-product-heading heading">
+                    Product name
+                  </h3></a
+                >
+                <fieldset class="recommendation-product-card__fieldset">
+                  <legend class="visually-hidden">Color</legend>
+                  <div class="radio-group">
+                    <div class="radio radio--color">
+                      <input
+                        id="terracotta-color-1"
+                        class="radio__input"
+                        type="radio"
+                        name="recommendation-product-color-1"
+                        value="Terracotta"
+                      /><label
+                        class="radio__label recommendation-radio__label"
+                        for="terracotta-color-1"
+                        style="background-color: #c88252"
+                        ><span class="visually-hidden">Terracotta</span></label
+                      >
+                    </div>
+
+                    <div class="radio radio--color">
+                      <input
+                        id="purple-color-1"
+                        class="radio__input"
+                        type="radio"
+                        name="recommendation-product-color-1"
+                        value="Purple"
+                      /><label
+                        class="radio__label recommendation-radio__label"
+                        for="purple-color-1"
+                        style="background-color: #ba9be5"
+                        ><span class="visually-hidden"
+                          >Purple latte</span
+                        ></label
+                      >
+                    </div>
+
+                    <div class="radio radio--color">
+                      <input
+                        id="pink-color-1"
+                        class="radio__input"
+                        type="radio"
+                        name="recommendation-product-color-1"
+                        value="Pink"
+                      /><label
+                        class="radio__label recommendation-radio__label"
+                        for="pink-color-1"
+                        style="background-color: #e9a0a7"
+                        ><span class="visually-hidden">Pink</span></label
+                      >
+                    </div>
+
+                    <div class="radio radio--color">
+                      <input
+                        id="barely-pink-color-1"
+                        class="radio__input"
+                        type="radio"
+                        name="recommendation-product-color-1"
+                        value="Barely pink"
+                      /><label
+                        class="radio__label recommendation-radio__label"
+                        for="barely-pink-color-1"
+                        style="background-color: #f8cab1"
+                        ><span class="visually-hidden">Barely pink</span></label
+                      >
+                    </div>
+                  </div>
+                </fieldset>
+                <p><abbr title="Swiss franc">CHF</abbr> 40</p>
+              </div>
             </article>
           </li>
           <li>
-            <article class="product-card">
+            <article class="product-card recommendation-product-card">
               <img
                 src="./assets/img/DSC_5389_1.png"
                 alt="Product name"
                 class="recommendation-product__image product-card__image"
               />
-              <a href="" class="product-card__link"
-                ><h3 class="recommendation-product-heading heading">
-                  Product name
-                </h3></a
-              >
-              <ul>
-                <li>
-                  <input
-                    id="terracotta-color-2"
-                    type="radio"
-                    name="recommendation-product-color-2"
-                    value="Terracotta"
-                  /><label
-                    for="terracotta-color-2"
-                    style="background-color: #c88252"
-                    ><span>Terracotta</span></label
-                  >
-                </li>
-                <li>
-                  <input
-                    id="purple-color-2"
-                    type="radio"
-                    name="recommendation-product-color-2"
-                    value="Purple"
-                  /><label
-                    for="purple-color-2"
-                    style="background-color: #ba9be5"
-                    ><span>Purple latte</span></label
-                  >
-                </li>
-                <li>
-                  <input
-                    id="pink-color-2"
-                    type="radio"
-                    name="recommendation-product-color-2"
-                    value="Pink"
-                  /><label for="pink-color-2" style="background-color: #e9a0a7"
-                    ><span>Pink</span></label
-                  >
-                </li>
-                <li>
-                  <input
-                    id="barely-pink-color-2"
-                    type="radio"
-                    name="recommendation-product-color-2"
-                    value="Barely pink"
-                  /><label
-                    for="barely-pink-color-2"
-                    style="background-color: #f8cab1"
-                    ><span>Barely pink</span></label
-                  >
-                </li>
-              </ul>
-              <p><abbr title="Swiss franc">CHF</abbr> 40</p>
+              <div class="product-item__info">
+                <a href="" class="product-card__link"
+                  ><h3 class="recommendation-product-heading heading">
+                    Product name
+                  </h3></a
+                >
+
+                <fieldset class="recommendation-product-card__fieldset">
+                  <legend class="visually-hidden">Color</legend>
+                  <div class="radio-group">
+                    <div class="radio radio--color">
+                      <input
+                        id="terracotta-color-2"
+                        class="radio__input"
+                        type="radio"
+                        name="recommendation-product-color-2"
+                        value="Terracotta"
+                      /><label
+                        class="radio__label recommendation-radio__label"
+                        for="terracotta-color-2"
+                        style="background-color: #c88252"
+                        ><span class="visually-hidden">Terracotta</span></label
+                      >
+                    </div>
+
+                    <div class="radio radio--color">
+                      <input
+                        id="purple-color-2"
+                        class="radio__input"
+                        type="radio"
+                        name="recommendation-product-color-2"
+                        value="Purple"
+                      /><label
+                        class="radio__label recommendation-radio__label"
+                        for="purple-color-2"
+                        style="background-color: #ba9be5"
+                        ><span class="visually-hidden"
+                          >Purple latte</span
+                        ></label
+                      >
+                    </div>
+
+                    <div class="radio radio--color">
+                      <input
+                        id="pink-color-2"
+                        class="radio__input"
+                        type="radio"
+                        name="recommendation-product-color-2"
+                        value="Pink"
+                      /><label
+                        class="radio__label recommendation-radio__label"
+                        for="pink-color-2"
+                        style="background-color: #e9a0a7"
+                        ><span class="visually-hidden">Pink</span></label
+                      >
+                    </div>
+
+                    <div class="radio radio--color">
+                      <input
+                        id="barely-pink-color-2"
+                        class="radio__input"
+                        type="radio"
+                        name="recommendation-product-color-2"
+                        value="Barely pink"
+                      /><label
+                        class="radio__label recommendation-radio__label"
+                        for="barely-pink-color-2"
+                        style="background-color: #f8cab1"
+                        ><span class="visually-hidden">Barely pink</span></label
+                      >
+                    </div>
+                  </div>
+                </fieldset>
+                <p><abbr title="Swiss franc">CHF</abbr> 40</p>
+              </div>
             </article>
           </li>
           <li>
-            <article class="product-card">
+            <article class="product-card recommendation-product-card">
               <img
                 src="./assets/img/DSC_2330.png"
                 alt="Product name"
                 class="recommendation-product__image product-card__image"
               />
-              <a href="" class="product-card__link"
-                ><h3 class="recommendation-product-heading heading">
-                  Product name
-                </h3></a
-              >
-              <ul>
-                <li>Sold out</li>
-              </ul>
-              <ul>
-                <li>
-                  <input
-                    id="terracotta-color-3"
-                    type="radio"
-                    name="recommendation-product-color-3"
-                    value="Terracotta"
-                  /><label
-                    for="terracotta-color-3"
-                    style="background-color: #c88252"
-                    ><span>Terracotta</span></label
-                  >
-                </li>
-                <li>
-                  <input
-                    id="purple-color-3"
-                    type="radio"
-                    name="recommendation-product-color-3"
-                    value="Purple"
-                  /><label
-                    for="purple-color-3"
-                    style="background-color: #ba9be5"
-                    ><span>Purple latte</span></label
-                  >
-                </li>
-                <li>
-                  <input
-                    id="pink-color-3"
-                    type="radio"
-                    name="recommendation-product-color-3"
-                    value="Pink"
-                  /><label for="pink-color-3" style="background-color: #e9a0a7"
-                    ><span>Pink</span></label
-                  >
-                </li>
-                <li>
-                  <input
-                    id="barely-pink-color-3"
-                    type="radio"
-                    name="recommendation-product-color-3"
-                    value="Barely pink"
-                  /><label
-                    for="barely-pink-color-3"
-                    style="background-color: #f8cab1"
-                    ><span>Barely pink</span></label
-                  >
-                </li>
-              </ul>
-              <p><abbr title="Swiss franc">CHF</abbr> 40</p>
+              <div class="product-item__info">
+                <a href="" class="product-card__link"
+                  ><h3 class="recommendation-product-heading heading">
+                    Product name
+                  </h3></a
+                >
+                <ul class="product-card__tags tags" role="list">
+                  <li class="tags__item tags__item--sold-out">Sold out</li>
+                </ul>
+
+                <fieldset class="recommendation-product-card__fieldset">
+                  <legend class="visually-hidden">Color</legend>
+                  <div class="radio-group">
+                    <div class="radio radio--color">
+                      <input
+                        id="terracotta-color-3"
+                        class="radio__input"
+                        type="radio"
+                        name="recommendation-product-color-3"
+                        value="Terracotta"
+                      /><label
+                        class="radio__label recommendation-radio__label"
+                        for="terracotta-color-3"
+                        style="background-color: #c88252"
+                        ><span class="visually-hidden">Terracotta</span></label
+                      >
+                    </div>
+
+                    <div class="radio radio--color">
+                      <input
+                        id="purple-color-3"
+                        class="radio__input"
+                        type="radio"
+                        name="recommendation-product-color-3"
+                        value="Purple"
+                      /><label
+                        class="radio__label recommendation-radio__label"
+                        for="purple-color-3"
+                        style="background-color: #ba9be5"
+                        ><span class="visually-hidden"
+                          >Purple latte</span
+                        ></label
+                      >
+                    </div>
+
+                    <div class="radio radio--color">
+                      <input
+                        id="pink-color-3"
+                        class="radio__input"
+                        type="radio"
+                        name="recommendation-product-color-3"
+                        value="Pink"
+                      /><label
+                        class="radio__label recommendation-radio__label"
+                        for="pink-color-3"
+                        style="background-color: #e9a0a7"
+                        ><span class="visually-hidden">Pink</span></label
+                      >
+                    </div>
+
+                    <div class="radio radio--color">
+                      <input
+                        id="barely-pink-color-3"
+                        class="radio__input"
+                        type="radio"
+                        name="recommendation-product-color-3"
+                        value="Barely pink"
+                      /><label
+                        class="radio__label recommendation-radio__label"
+                        for="barely-pink-color-3"
+                        style="background-color: #f8cab1"
+                        ><span class="visually-hidden">Barely pink</span></label
+                      >
+                    </div>
+                  </div>
+                </fieldset>
+                <p><abbr title="Swiss franc">CHF</abbr> 40</p>
+              </div>
             </article>
           </li>
           <li>
-            <article class="product-card">
+            <article class="product-card recommendation-product-card">
               <img
                 src="./assets/img/DSC_1111.png"
                 alt="Product name"
                 class="recommendation-product__image product-card__image"
               />
+              <div class="product-item__info">
               <a href="" class="product-card__link"
                 ><h3 class="recommendation-product-heading heading">
                   Product name
                 </h3></a
               >
-              <ul>
-                <li>
-                  <input
-                    id="terracotta-color-4"
-                    type="radio"
-                    name="recommendation-product-color-4"
-                    value="Terracotta"
-                  /><label
-                    for="terracotta-color-4"
-                    style="background-color: #c88252"
-                    ><span>Terracotta</span></label
-                  >
-                </li>
-                <li>
-                  <input
-                    id="purple-color-4"
-                    type="radio"
-                    name="recommendation-product-color-4"
-                    value="Purple"
-                  /><label
-                    for="purple-color-4"
-                    style="background-color: #ba9be5"
-                    ><span>Purple latte</span></label
-                  >
-                </li>
-                <li>
-                  <input
-                    id="pink-color-4"
-                    type="radio"
-                    name="recommendation-product-color-4"
-                    value="Pink"
-                  /><label for="pink-color-4" style="background-color: #e9a0a7"
-                    ><span>Pink</span></label
-                  >
-                </li>
-                <li>
-                  <input
-                    id="barely-pink-color-4"
-                    type="radio"
-                    name="recommendation-product-color-4"
-                    value="Barely pink"
-                  /><label
-                    for="barely-pink-color-4"
-                    style="background-color: #f8cab1"
-                    ><span>Barely pink</span></label
-                  >
-                </li>
-              </ul>
+              <fieldset class="recommendation-product-card__fieldset">
+                <legend class="visually-hidden">Color</legend>
+                <div class="radio-group">
+                  <div class="radio radio--color">
+                    <input
+                      id="terracotta-color-4"
+                      class="radio__input"
+                      type="radio"
+                      name="recommendation-product-color-4"
+                      value="Terracotta"
+                    /><label
+                      class="radio__label recommendation-radio__label"
+                      for="terracotta-color-4"
+                      style="background-color: #c88252"
+                      ><span class="visually-hidden">Terracotta</span></label
+                    >
+                  </div>
+
+                  <div class="radio radio--color">
+                    <input
+                      id="purple-color-4"
+                      class="radio__input"
+                      type="radio"
+                      name="recommendation-product-color-4"
+                      value="Purple"
+                    /><label
+                      class="radio__label recommendation-radio__label"
+                      for="purple-color-4"
+                      style="background-color: #ba9be5"
+                      ><span class="visually-hidden"
+                        >Purple latte</span
+                      ></label
+                    >
+                  </div>
+
+                  <div class="radio radio--color">
+                    <input
+                      id="pink-color-4"
+                      class="radio__input"
+                      type="radio"
+                      name="recommendation-product-color-4"
+                      value="Pink"
+                    /><label
+                      class="radio__label recommendation-radio__label"
+                      for="pink-color-4"
+                      style="background-color: #e9a0a7"
+                      ><span class="visually-hidden">Pink</span></label
+                    >
+                  </div>
+
+                  <div class="radio radio--color">
+                    <input
+                      id="barely-pink-color-4"
+                      class="radio__input"
+                      type="radio"
+                      name="recommendation-product-color-4"
+                      value="Barely pink"
+                    /><label
+                      class="radio__label recommendation-radio__label"
+                      for="barely-pink-color-4"
+                      style="background-color: #f8cab1"
+                      ><span class="visually-hidden">Barely pink</span></label
+                    >
+                  </div>
+                </div>
+              </fieldset>
               <p><abbr title="Swiss franc">CHF</abbr> 40</p>
+            </div>
             </article>
           </li>
         </ul>
