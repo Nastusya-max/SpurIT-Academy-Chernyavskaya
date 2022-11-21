@@ -186,7 +186,7 @@ body {
 .header-navigation {
   width: 100%;
   margin: 0 auto;
-  padding: 2.2rem 3.75rem 0.3rem;
+  padding: 2.2rem 3.75rem 1rem;
   border-bottom: 2px solid var(--palette-silver);
 }
 
@@ -204,14 +204,14 @@ body {
   flex-basis: auto;
 }
 
-.header-navigation__link:not(.last) {
+.header-navigation__item:not(.last) {
   padding-right: 2.25rem;
 }
 
 .header-navigation__logo {
   position: relative;
   right: 5%;
-  bottom: 20%;
+  bottom: 60%;
 }
 /* #endregion */
 
@@ -613,7 +613,7 @@ body {
 
 .footer__top {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 9.375rem);
+  grid-template-columns: repeat(auto-fill, 11.68rem);
   gap: 2rem 9.75rem;
   padding: 5rem 0;
   margin: 0;
