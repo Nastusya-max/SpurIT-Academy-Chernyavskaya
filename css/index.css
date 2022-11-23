@@ -607,6 +607,10 @@ body {
   background-color: currentColor;
   transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
 }
+
+.collapsible-button:hover {
+  color: var(--palette-indigo);
+}
 /* #endregion */
 
 /* #region Products */
@@ -694,7 +698,7 @@ body {
 /* #endregion */
 
 /* #region Footer */
-.footer-navigation__link:hover {
+.footer-navigation__link:hover, .icon-list__link:hover {
   color: var(--palette-indigo);
 }
 
