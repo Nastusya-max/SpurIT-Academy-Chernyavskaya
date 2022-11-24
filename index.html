@@ -94,7 +94,7 @@
       </div>
 
       <div class="breadcrumbs">
-        <ol class="breadcrumbs__list">
+        <ol class="breadcrumbs__list" role="list">
           <li class="breadcrumbs__item">
             <a class="breadcrumbs__page" href="/">Home</a>
           </li>
@@ -354,26 +354,28 @@
                 </div>
               </fieldset>
 
-              <button
-                class="button button--primary"
-                type="submit"
-                name="type"
-                value="add"
-              >
-                <span class="visually-hidden"
-                  >Add product to shopping cart</span
+              <div class="form-buttons__container">
+                <button
+                  class="button button--primary"
+                  type="submit"
+                  name="type"
+                  value="add"
                 >
-                Add to cart
-              </button>
-              <button
-                class="button button--secondary"
-                type="submit"
-                name="type"
-                value="buy"
-              >
-                <span class="visually-hidden">Buy product right now</span>
-                Buy it now
-              </button>
+                  <span class="visually-hidden"
+                    >Add product to shopping cart</span
+                  >
+                  Add to cart
+                </button>
+                <button
+                  class="button button--secondary"
+                  type="submit"
+                  name="type"
+                  value="buy"
+                >
+                  <span class="visually-hidden">Buy product right now</span>
+                  Buy it now
+                </button>
+              </div>
             </form>
 
             <p class="product-card__text">
@@ -422,7 +424,7 @@
         <h2 class="recommendation-heading heading--xxl heading">
           You may also like
         </h2>
-        <ul class="products__list">
+        <ul class="products__list" role="list">
           <li>
             <article class="product-card recommendation-product-card">
               <img
@@ -766,9 +768,9 @@
                 Susparsa Store<br />Geneva, Switzerland
               </p>
 
-              <ul class="icon-list">
+              <ul class="icon-list" role="list">
                 <li class="icon-list__item">
-                  <a href="" class="icon-list__link"
+                  <a href="/facebook" class="icon-list__link"
                     ><svg
                       class="social-icon icon"
                       xmlns="http://www.w3.org/2000/svg"
@@ -787,7 +789,7 @@
                 </li>
 
                 <li class="icon-list__item">
-                  <a href="" class="icon-list__link"
+                  <a href="/instagram" class="icon-list__link"
                     ><svg
                       class="social-icon icon"
                       width="20"
@@ -809,7 +811,7 @@
 
           <section class="footer__section">
             <h2 class="footer__heading heading heading--s">Company</h2>
-            <ul class="footer-navigation">
+            <ul class="footer-navigation" role="list">
               <li class="footer-navigation__item">
                 <a href="" class="footer-navigation__link">Women</a>
               </li>
@@ -830,7 +832,7 @@
 
           <section class="footer__section">
             <h2 class="footer__heading heading heading--s">Useful Links</h2>
-            <ul class="footer-navigation">
+            <ul class="footer-navigation" role="list">
               <li class="footer-navigation__item">
                 <a href="" class="footer-navigation__link">Privacy Policy</a>
               </li>

@@ -379,9 +379,13 @@ body {
 .product-card__fieldset--size .radio-group,
 .product-card__fieldset--color .radio-group {
   margin-left: -6px;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 .quantity {
+  margin-top: 12px;
+  margin-bottom: 12px;
   display: flex;
 
   --quantity-border-color: var(--border-color);
@@ -555,7 +559,7 @@ body {
 }
 
 .product-card__fieldset {
-  padding-bottom: 1rem;
+  padding-bottom: 0.75rem;
 }
 
 .product-card__heading {
@@ -574,6 +578,10 @@ body {
 
 .collapsible-tabe {
   margin-top: 60px;
+}
+
+.form-buttons__container {
+  margin-top: 1rem;
 }
 
 .button {
