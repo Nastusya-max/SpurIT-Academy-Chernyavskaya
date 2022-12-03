@@ -15,8 +15,8 @@
 
   <body>
     <header class="header">
-      <!-- <a class="skip-to skip-to--content" href="#main">Skip to content</a>
-      <a class="skip-to skip-to--footer" href="#footer">Skip to footer</a> -->
+      <a class="skip-to skip-to--content" href="#main">Skip to main content</a>
+      <a class="skip-to skip-to--footer" href="#footer">Skip to footer</a>
       <div class="header-navigation__container">
         <nav class="header-navigation">
           <div class="header-navigation__section header-logo__container">
@@ -94,7 +94,7 @@
       </div>
 
       <div class="breadcrumbs">
-        <ol class="breadcrumbs__list">
+        <ol class="breadcrumbs__list" role="list">
           <li class="breadcrumbs__item">
             <a class="breadcrumbs__page" href="/">Home</a>
           </li>
@@ -128,7 +128,9 @@
             </div>
 
             <form action="/cart" method="post" class="product-card__form">
-              <fieldset class="product-card__fieldset">
+              <fieldset
+                class="product-card__fieldset product-card__fieldset--size"
+              >
                 <legend>Size</legend>
                 <div class="radio-group">
                   <div class="radio">
@@ -216,7 +218,9 @@
                 </div>
               </fieldset>
 
-              <fieldset class="product-card__fieldset">
+              <fieldset
+                class="product-card__fieldset product-card__fieldset--color"
+              >
                 <legend>Color - <span aria-hidden="true">White</span></legend>
                 <div class="radio-group">
                   <div class="radio radio--color">
@@ -350,31 +354,35 @@
                 </div>
               </fieldset>
 
-              <button
-                class="button button--primary"
-                type="submit"
-                name="type"
-                value="add"
-              >
-                <span class="visually-hidden"
-                  >Add product to shopping cart</span
+              <div class="form-buttons__container">
+                <button
+                  class="button button--primary"
+                  type="submit"
+                  name="type"
+                  value="add"
                 >
-                Add to cart
-              </button>
-              <button
-                class="button button--secondary"
-                type="submit"
-                name="type"
-                value="buy"
-              >
-                <span class="visually-hidden">Buy product right now</span>
-                Buy it now
-              </button>
+                  <span class="visually-hidden"
+                    >Add product to shopping cart</span
+                  >
+                  Add to cart
+                </button>
+                <button
+                  class="button button--secondary"
+                  type="submit"
+                  name="type"
+                  value="buy"
+                >
+                  <span class="visually-hidden">Buy product right now</span>
+                  Buy it now
+                </button>
+              </div>
             </form>
 
             <p class="product-card__text">
               A unisex basic garment with a loose fit. Light and comfortable to
-              your skin.<br />
+              your skin.
+            </p>
+            <p class="product-card__text">
               Certification of cotton -
               <i><abbr title="Global Organic Textile Standard">GOTS</abbr></i>
             </p>
@@ -403,13 +411,11 @@
             </div>
           </div>
 
-          <!-- <div class="img-feature"> -->
           <img
             src="./assets/img/mainPic.png"
             alt="White unisex t-shirt"
             class="main-roduct-card__image product-card__image"
           />
-          <!-- </div> -->
         </article>
       </section>
 
@@ -418,7 +424,7 @@
         <h2 class="recommendation-heading heading--xxl heading">
           You may also like
         </h2>
-        <ul class="products__list">
+        <ul class="products__list" role="list">
           <li>
             <article class="product-card recommendation-product-card">
               <img
@@ -762,9 +768,9 @@
                 Susparsa Store<br />Geneva, Switzerland
               </p>
 
-              <ul class="icon-list">
+              <ul class="icon-list" role="list">
                 <li class="icon-list__item">
-                  <a href="" class="icon-list__link"
+                  <a href="/facebook" class="icon-list__link"
                     ><svg
                       class="social-icon icon"
                       xmlns="http://www.w3.org/2000/svg"
@@ -783,7 +789,7 @@
                 </li>
 
                 <li class="icon-list__item">
-                  <a href="" class="icon-list__link"
+                  <a href="/instagram" class="icon-list__link"
                     ><svg
                       class="social-icon icon"
                       width="20"
@@ -805,7 +811,7 @@
 
           <section class="footer__section">
             <h2 class="footer__heading heading heading--s">Company</h2>
-            <ul class="footer-navigation">
+            <ul class="footer-navigation" role="list">
               <li class="footer-navigation__item">
                 <a href="" class="footer-navigation__link">Women</a>
               </li>
@@ -826,7 +832,7 @@
 
           <section class="footer__section">
             <h2 class="footer__heading heading heading--s">Useful Links</h2>
-            <ul class="footer-navigation">
+            <ul class="footer-navigation" role="list">
               <li class="footer-navigation__item">
                 <a href="" class="footer-navigation__link">Privacy Policy</a>
               </li>
