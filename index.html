@@ -917,6 +917,14 @@
       </div>
     </footer>
 
-    <script src="./js/index.js"></script>
+    <script src="./components/Accordion/Accordion.js"></script>
+    <script>
+      const accordions = document.querySelectorAll(
+        ".collapsible-tabe .collapsible-item"
+      );
+      accordions.forEach((accordionEl) => {
+        new Accordion(accordionEl);
+      });
+    </script>
   </body>
 </html>
